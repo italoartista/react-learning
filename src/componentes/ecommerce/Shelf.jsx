@@ -1,11 +1,15 @@
-function Shelf({ produtos, nome }) {
+
+
+function Shelf(props) {
+    console.log(props)
     return (
         <div>
             <h1>Shelf</h1>
-            <ul>
+            <ul style={{ listStyle: 'none' }}>
                 {
-                    produtos.map((produto) => <li key={produto.id}>{produto.nome} - R$ {produto.preco.toFixed(2)} <button>Comprar</button></li>)
-
+                    props.produtos.map((produto, index) => {
+                        return <li key={index}> {produto.nome} </li>
+                    })
                 }
             </ul>
         </div>
