@@ -78,7 +78,6 @@ const PokemonDetail = lazy(() => import('./PokemonDetail'));
 - Lazy loading seria uma boa prática para melhorar o desempenho, especialmente se o projeto crescer.
 - Se você quiser, pode misturar o modal com o roteamento para dar uma sensação de SPA, enquanto permite que as URLs sejam compartilháveis.
 
-Sim! O exemplo que te mostrei com `React.lazy` e `Suspense` é uma forma de **lazy loading** em React.
 
 ### O que é lazy loading?
 
